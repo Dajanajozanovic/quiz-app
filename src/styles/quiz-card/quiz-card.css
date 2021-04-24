@@ -1,11 +1,42 @@
-.quiz-card {
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: 12px;
+
+.quiz-card{
+  background-color:lightsalmon;
+  padding: 16px;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+  
 }
 
-.quiz-card__heading {
-  font-weight: 400;
-  font-size: 1.2rem;
-  text-align: center;
+.quiz-card__bookmark{
+  position: absolute;
+  right: 8px;
+  top: -12px;
+  border-bottom: transparent;
+  border: 20px solid lightgray;
+  height: 30px;
 }
+
+.quiz-card__bookmark--selected {
+  border: 20px solid black;
+  border-bottom-color: transparent;
+
+}
+
+.quiz-card__tags{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style: none;
+  padding:0;
+}
+
+  .quiz-card__tags li {
+    background-color: gray;
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+  }
+  
+
+
