@@ -1,13 +1,12 @@
-
 .navbar-main {
-    background: var(--color-primary);
-    color: var(--color-white);
-    padding: 12px;
-    width: 100%;
-  }
-  
-  .navbar__button {
-    background: var(--quizcard);
-    padding: 8px;
-    border-radius: 8px;
-  }
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 12px;
+  width: 100%;
+}
+
+.navbar__button {
+  background: var(--quizcard);
+  padding: 8px;
+  border-radius: 8px;
+}

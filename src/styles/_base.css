@@ -10,9 +10,6 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0;
-  
-  display: grid;
-
   grid-template-rows: 48px auto;
   max-width: 600px;
   height: 100vh;
