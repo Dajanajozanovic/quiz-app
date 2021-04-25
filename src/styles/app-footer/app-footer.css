@@ -1,12 +1,12 @@
-.navbar-main {
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: 12px;
-  width: 100%;
+.navbar__footer {
+  display: flex;
+  background-color: lightgray;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px 4px 0 0;
+  width: auto;
 }
 
-.navbar__button {
-  background: var(--quizcard);
-  padding: 8px;
-  border-radius: 8px;
+a {
+  text-decoration: none;
 }

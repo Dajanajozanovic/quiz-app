@@ -7,7 +7,7 @@
     "serve": "vite preview",
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "test": "htmlhint --ignore ./build/**/* && prettier --check . && npm run stylelint && eslint --cache --fix src",
+    "test": "prettier --write . && htmlhint --ignore ./build/**/* && prettier --check . && npm run stylelint && eslint --cache --fix src",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
