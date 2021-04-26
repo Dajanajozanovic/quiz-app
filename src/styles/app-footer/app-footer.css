@@ -7,6 +7,14 @@
   width: auto;
 }
 
-a {
-  text-decoration: none;
+/* Change the color of links on hover */
+.navbar__footer a:hover {
+  background-color: rgb(210, 119, 228);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar__footer a.active {
+  background-color: #4caf50;
+  color: white;
 }

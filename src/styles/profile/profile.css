@@ -1,11 +1,15 @@
 .profile {
   display: flex;
   align-items: center;
-  background-color: lightsalmon;
 }
 
 .profile__image {
   width: 200px;
   justify-items: center;
   flex-direction: column;
+}
+
+.profile__name {
+  float: left;
+  width: 250px;
 }
