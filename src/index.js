@@ -1,12 +1,12 @@
 const buttonHome = document.querySelector('.button-home')
 const buttonBookmarks = document.querySelector('.button-bookmarks')
 const buttonCreate = document.querySelector('.button-create')
-const buttonSettings = document.querySelector('.button-settings')
+const buttonProfile = document.querySelector('.button-profile')
 
-const homePage = document.querySelector('.page-home')
-const createPage = document.querySelector('.page-create')
-const bookmarksPage = document.querySelector('.page-bookmarks')
-const profilePage = document.querySelector('.page-settings')
+const homePage = document.querySelector('.home-page')
+const createPage = document.querySelector('.create-page')
+const bookmarksPage = document.querySelector('.bookmarks-page')
+const profilePage = document.querySelector('.profile-page')
 
 buttonHome.addEventListener('click', () => {
   homePage.classList.remove('hidden')
