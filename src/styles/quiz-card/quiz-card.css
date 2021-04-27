@@ -11,9 +11,8 @@
   position: absolute;
   right: 8px;
   top: -12px;
-  border-bottom: transparent;
   border: 20px solid lightgray;
-  height: 30px;
+  border-bottom-color: transparent;
 }
 
 .quiz-card__bookmark--selected {

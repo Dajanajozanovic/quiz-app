@@ -51,3 +51,16 @@ buttonProfile.addEventListener('click', () => {
   buttonBookmarks.classList.remove('active')
   buttonProfile.classList.add('active')
 })
+
+const firstButton = document.querySelector('.first-button')
+const firstAnswer = document.querySelector('.first-answer')
+
+firstButton.addEventListener('click', () => {
+  firstAnswer.classList.toggle('hidden')
+})
+
+const bookmark = document.querySelector('.quiz-card__bookmark')
+
+bookmark.addEventListener('click', () => {
+  bookmark.classList.toggle('quiz-card__bookmark--selected')
+})
