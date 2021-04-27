@@ -6,12 +6,14 @@
     <title>Quiz App</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="app-header">
       <h1 class="app-header__heading">Quiz App</h1>
     </header>
-    <main class="app-main">
+    
+    <main class="home-page app-main">
       <section class="app-main__quiz-cards">
         <section class="quiz-card">
           <div
@@ -75,40 +77,150 @@
         </section>
       </section>
     </main>
+    
+    <main class="create-page app-main hidden">
+      <section class="q1">
+        <form>
+          <label>
+            Add Question:
+            <textarea cols="30" rows="5"> </textarea>
+          </label>
+          <label>
+            Add Answer:
+            <textarea cols="30" rows="5"> </textarea>
+          </label>
+          <button>Submit</button>
+        </form>
+      </section>
+
+      <section class="q2">
+        <form>
+          <label>
+            Add Question:
+            <textarea cols="30" rows="5"> </textarea>
+          </label>
+          <label>
+            Add Answer:
+            <textarea cols="30" rows="5"> </textarea>
+          </label>
+          <button>Submit</button>
+        </form>
+      </section>
+
+      <section class="q3">
+        <form>
+          <label for="tags"> tags</label>
+          <input id="tags" type="text" />
+        </form>
+      </section>
+    </main>
+
+    <main class="bookmarks-page app-main hidden">
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark quiz-card__bookmark--selected"
+          aria-label="Add bookmark"
+        ></div>
+        <h2 class="quiz-card__heading">Question</h2>
+        <p class="quiz-card__text">
+          Wie viele Buchstaben hat das hawaianische Alphabet?
+        </p>
+        <button class="quiz-card__button">Show answer!</button>
+        <p class="quiz-card__text hidden">12</p>
+        <ul class="quiz-card__tags">
+          <li>Strand</li>
+          <li>ABC</li>
+          <li>Zahl</li>
+          <li>Urlaub</li>
+        </ul>
+      </section>
+
+      <section class="quiz-card">
+        <div
+          role="button"
+          class="quiz-card__bookmark"
+          aria-label="Add bookmark"
+        ></div>
+        <h2 class="quiz-card__heading">Question</h2>
+        <p class="quiz-card__text">
+          Wie viele Liter Bier werden in Deutschland pro Kopf jährlich
+          getrunken?
+        </p>
+        <button class="quiz-card__button">Show answer!</button>
+        <p class="quiz-card__text hidden">100 Liter Bier.</p>
+        <ul class="quiz-card__tags">
+          <li>Brauerei</li>
+          <li>Fass</li>
+          <li>Alkohol</li>
+          <li>Deutschland</li>
+        </ul>
+      </section>
+    </main>
+
+    <main class="profile-page hidden"> 
+      <section class="profile">
+  
+          <section>
+            <img class="profile__image" src="../../assets/mimi.npg.jpg" alt="" />
+          </section>
+  
+          <section><h2 class="profile__name">Mimi</h2></section>
+          <section><p class="profile__about-myself"></p></section>
+          Hello, my name is Mimi i am a very cute little dog, living in Hamburg and love
+          to take a walk to the river Elbe! :)
+      </section>
+  
+        <h2 class="profile__skills">My Skills</h2>
+        <ul class="profile__tag-list">
+          <li>barking</li>
+          <li>running</li>
+          <li>sleeping</li>
+          <li>eating</li>
+        </ul>
+        <div>
+          <button class="profile__logout-button">Logout</button>
+        </div>
+        
+      </main>
+
 
     <footer class="navbar__footer">
-      <nav class="navbar__footer-home">
-        <a href="index.html" class="active">
+      
+        <button class="button-home active">
           <img
             src="../../assets/iconfinder_icon-home_211676.png"
             alt=""
             class="navbar__footer-home-icons"
-        /></a>
-      </nav>
-      <nav>
-        <a href="bookmarks.html">
+        /></button>
+   
+  
+        <button class="button-bookmarks">
           <img
             src="../../assets/iconfinder_bookmark_309099.png"
             alt=""
             class="navbar__footer-bookmark-icon"
-        /></a>
-      </nav>
-      <nav>
-        <a href="create.html">
+        /></button>
+     
+        <button class="button-create">
           <img
             src="../../assets/iconfinder_document-content-article-letter-paper_3209352.png"
             alt=""
             class="navbar__footer-create-icon"
-        /></a>
-      </nav>
-      <nav>
-        <a href="profile.html">
+        /></button>
+    
+        <button class="button-profile">
           <img
             src="../../assets/iconfinder_00-ELASTOFONT-STORE-READY_user-circle_2703062.png"
             alt=""
             class="navbar__footer-profile-icon"
-        /></a>
-      </nav>
+        /></button>
+   
+
+
     </footer>
+
+ 
+
   </body>
 </html>
