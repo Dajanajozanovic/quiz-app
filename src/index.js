@@ -64,3 +64,10 @@ const bookmark = document.querySelector('.quiz-card__bookmark')
 bookmark.addEventListener('click', () => {
   bookmark.classList.toggle('quiz-card__bookmark--selected')
 })
+
+const darkmodeButton = document.querySelector('.js-darkmode-button')
+const body = document.querySelector('body')
+
+darkmodeButton.addEventListener('click', () => {
+  body.classList.toggle('darkmode')
+})
