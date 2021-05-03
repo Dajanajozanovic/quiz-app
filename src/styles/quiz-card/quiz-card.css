@@ -11,8 +11,8 @@
   position: absolute;
   right: 8px;
   top: -12px;
-  border-bottom: transparent;
   border: 20px solid lightgray;
+  border-bottom-color: transparent;
   height: 30px;
 }
 

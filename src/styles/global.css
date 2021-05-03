@@ -1,0 +1,31 @@
+@import './_variables.css';
+@import './_base.css';
+@import './_utility.css';
+
+body {
+  display: grid;
+  grid-template-rows: auto 48px;
+  height: 100vh;
+}
+
+main[class^='page'] {
+  background: steelblue;
+  display: grid;
+  place-items: center;
+  row-gap: 20px;
+}
+
+button {
+  border: none;
+}
+
+.navigation {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  background: #ccc;
+}
+
+.active {
+  background: hotpink;
+}

@@ -1,1 +1,18 @@
-/* to be filled */
+.form {
+  padding: 8px;
+}
+
+.form__fieldset {
+  margin: 16px;
+  display: grid;
+}
+
+.form__textarea {
+  margin-bottom: 16px;
+}
+
+.form__button {
+  width: 9ch;
+  justify-self: center;
+  margin-top: 16px;
+}
